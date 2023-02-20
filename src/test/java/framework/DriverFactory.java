@@ -7,10 +7,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-    public static WebDriver getDriver(){
-        WebDriver driver = null;
+    public static WebDriver driver;
+    public static WebDriver getDriver() {
         String browser = new PropertyReader("config.properties").getProperty("browser");
-
         switch (browser){
             case "chrome":
                 WebDriverManager.chromedriver().setup();
