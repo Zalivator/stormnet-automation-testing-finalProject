@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.628 s <<< FAILURE! - in TestSuite
-registrationTest(fiveElement.tests.Registration)  Time elapsed: 10.062 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Element must be set
-	at fiveElement.tests.Registration.registrationTest(Registration.java:11)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.171 s - in TestSuite

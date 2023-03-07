@@ -4,8 +4,7 @@
 <suite name ="FiveElement" parallel="tests" thread-count="1">
     <test name="test">
         <classes>
-            <!--<class name="fiveElement.tests.Authorization"></class>-->
-            <class name="fiveElement.tests.Registration"></class>
+            <class name="electroSila.tests.TelevisorsTest"></class>
         </classes>
     </test>
 </suite>
