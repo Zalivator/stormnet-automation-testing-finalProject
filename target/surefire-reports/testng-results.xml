@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T14:04:20 MSK" name="FiveElement" finished-at="2023-03-07T14:04:32 MSK" duration-ms="11680">
+  <suite started-at="2023-03-09T17:05:31 MSK" name="ElectroSila" finished-at="2023-03-09T17:05:52 MSK" duration-ms="21485">
     <groups>
     </groups>
-    <test started-at="2023-03-07T14:04:20 MSK" name="test" finished-at="2023-03-07T14:04:32 MSK" duration-ms="11680">
-      <class name="electroSila.tests.TelevisorsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:electroSila.tests.TelevisorsTest@2e385cce]" started-at="2023-03-07T14:04:20 MSK" name="setup" finished-at="2023-03-07T14:04:28 MSK" duration-ms="8132" status="PASS">
+    <test started-at="2023-03-09T17:05:31 MSK" name="test" finished-at="2023-03-09T17:05:52 MSK" duration-ms="21485">
+      <class name="electroSila.tests.ProductsOnDiscountTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:electroSila.tests.ProductsOnDiscountTest@f0c8a99]" started-at="2023-03-09T17:05:31 MSK" name="setup" finished-at="2023-03-09T17:05:36 MSK" duration-ms="5739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="electrosilaTest()[pri:0, instance:electroSila.tests.TelevisorsTest@2e385cce]" started-at="2023-03-07T14:04:28 MSK" name="electrosilaTest" finished-at="2023-03-07T14:04:31 MSK" duration-ms="2654" status="PASS">
+        <test-method signature="discountsTest()[pri:0, instance:electroSila.tests.ProductsOnDiscountTest@f0c8a99]" started-at="2023-03-09T17:05:36 MSK" name="discountsTest" finished-at="2023-03-09T17:05:51 MSK" duration-ms="14882" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- electrosilaTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:electroSila.tests.TelevisorsTest@2e385cce]" started-at="2023-03-07T14:04:31 MSK" name="tearDown" description="Closing browser" finished-at="2023-03-07T14:04:32 MSK" duration-ms="814" status="PASS">
+        </test-method> <!-- discountsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:electroSila.tests.ProductsOnDiscountTest@f0c8a99]" started-at="2023-03-09T17:05:51 MSK" name="tearDown" description="Closing browser" finished-at="2023-03-09T17:05:52 MSK" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- electroSila.tests.TelevisorsTest -->
+      </class> <!-- electroSila.tests.ProductsOnDiscountTest -->
     </test> <!-- test -->
-  </suite> <!-- FiveElement -->
+  </suite> <!-- ElectroSila -->
 </testng-results>

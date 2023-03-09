@@ -6,17 +6,43 @@
   <component name="ChangeListManager">
     <list default="true" id="7c2faded-ef3b-4f91-a064-f17a9a65ae33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T14-04-07_591.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/SelectedTelevisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/SelectedTelevisorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/TelevisorsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/TelevisorsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/tests/TelevisorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/tests/TelevisorsAdditionalValuesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stormnet-automation-testing-finalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stormnet-automation-testing-finalProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0482e28c-281c-4c01-8d8b-ddde8de1c134-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/16a9f326-64e7-42c6-ac06-aaaa8bc9db9d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/31bc168f-6e8b-4e31-a160-bff522ee4a9b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3a0e9bee-8aaa-4b9b-b0f2-dd7cf5398fa4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5072b0c6-1e2e-49e5-a459-cbb56f1ba9ef-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/598e156f-e235-4ee8-acb8-e5c38ee52d2a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-07T14-04-19_813.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-fiveElement.tests.Registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-fiveElement.tests.Registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-electroSila.tests.TelevisorsTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/SelectedTelevisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/SelectedTelevisorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/TelevisorsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/TelevisorsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/tests/TelevisorsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +79,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Zalivako/JAVA courses/stormnet-automation-testing-finalProject&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Zalivako/JAVA courses/OnlinerCucumber&quot;
   }
 }</component>
   <component name="RecentsManager">

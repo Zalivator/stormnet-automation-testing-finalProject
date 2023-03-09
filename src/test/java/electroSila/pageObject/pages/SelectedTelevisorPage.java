@@ -8,15 +8,17 @@ import org.testng.Assert;
 
 public class SelectedTelevisorPage extends BasePage {
     private static final By PAGE_LOCATOR = By.xpath("//div[@class='name_price']//strong");
-    private static final Button BUTTON_ADDITIONAL_SERVICES = new Button(By.xpath("//div[@class='tab_usl']/div[@class='tab_toggle']"));
-    private static final Button BUTTON_SHOW_GUARANTEE_SERVICE_TEXT = new Button(By.xpath("//div[@class='tab_usl']//p[text()='Показать']"));
+    private static final String BUTTON_ADDITIONAL_RECOMMENDATIONS = "//div[@class='%s']/div[@class='tab_toggle']";
+    private static final String BUTTON_SHOW_RECOMMENDATIONS = "//div[@class='%s']//p[text()='Показать']";
 
     public SelectedTelevisorPage() {
-        super(PAGE_LOCATOR, "Selected product page");
+        super(PAGE_LOCATOR, "Selected televisor page");
     }
-    @Step("Закрытие вкладки 'Дополнительные услуги'")
-    public void closeAdditionalServices() {
-        BUTTON_ADDITIONAL_SERVICES.clickViaJS();
-        Assert.assertEquals(BUTTON_SHOW_GUARANTEE_SERVICE_TEXT.getAttribute("style"), "display: none;");
+    @Step("Закрытие вкладок 'Дополнительные услуги' и 'С этим товаром рекомендуют'")
+    public void closeAdditionalServices(String additionalRecommendationClass) {
+        Button buttonAdditionalRecommendations = new Button(By.xpath(String.format(BUTTON_ADDITIONAL_RECOMMENDATIONS, additionalRecommendationClass)));
+        buttonAdditionalRecommendations.clickViaJS();
+        Button buttonShowRecommendations = new Button(By.xpath(String.format(BUTTON_SHOW_RECOMMENDATIONS, additionalRecommendationClass)));
+        Assert.assertEquals(buttonShowRecommendations.getAttribute("style"), "display: none;");
     }
 }
