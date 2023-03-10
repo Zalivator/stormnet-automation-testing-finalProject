@@ -7,8 +7,8 @@ import framework.BaseTest;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
-public class TelevisorsAdditionalValuesTest extends BaseTest {
-    @Description("Закрытие вкладки 'С этим товаром рекомендуют' на странице с выбранным телевизором. Ожидаемый результат: Вкладка закрывается.")
+public class InstallmentAndCreditTest extends BaseTest {
+    @Description("Открытие окна 'Справочный расчет при оплате частями' для выбранного продукта. Ожидаемый результат: окно 'Справочный расчет при оплате частями' открывается.")
     @Test
     public void electrosilaTest() {
         MainPage mainPage = new MainPage();
@@ -18,7 +18,7 @@ public class TelevisorsAdditionalValuesTest extends BaseTest {
         televisorsPage.navigateToProduct("LG 50UQ81006LB телевизор");
 
         SelectedTelevisorPage selectedTelevisorPage = new SelectedTelevisorPage();
-        selectedTelevisorPage.closeAdditionalServices("tab_soputka");
+        selectedTelevisorPage.openInstallmentAndCreditWindow();
     }
 
 }

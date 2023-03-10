@@ -6,42 +6,39 @@
   <component name="ChangeListManager">
     <list default="true" id="7c2faded-ef3b-4f91-a064-f17a9a65ae33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/SelectedTelevisorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/SelectedTelevisorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/ShopAddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/ShopAddressesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/StylersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/StylersPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/TelevisorsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/pageObject/pages/TelevisorsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/tests/TelevisorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/tests/TelevisorsAdditionalValuesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/tests/ShowRoadMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/tests/ShowRoadMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/electroSila/tests/TelevisorsAdditionalValuesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/electroSila/tests/InstallmentAndCreditTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stormnet-automation-testing-finalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stormnet-automation-testing-finalProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/0482e28c-281c-4c01-8d8b-ddde8de1c134-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/16a9f326-64e7-42c6-ac06-aaaa8bc9db9d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/31bc168f-6e8b-4e31-a160-bff522ee4a9b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3a0e9bee-8aaa-4b9b-b0f2-dd7cf5398fa4-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/5072b0c6-1e2e-49e5-a459-cbb56f1ba9ef-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/598e156f-e235-4ee8-acb8-e5c38ee52d2a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-07T14-04-19_813.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FiveElement/test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f63e9ed-aca8-411f-afd4-2c852f0f699c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1f2a4621-aae7-48ce-82c3-a90faa281b5c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4c7409da-a264-49d9-9fb0-a071902848c8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9fe047ca-16f5-42fb-8953-52359bd16c12-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e5f157f6-8273-454d-b487-d6c7025268fc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f8e16635-3996-4b0c-8ff8-b700e30502f6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-09T17-05-30_254.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ElectroSila/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ElectroSila/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ElectroSila/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ElectroSila/test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-electroSila.tests.TelevisorsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/FiveElement/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-electroSila.tests.ProductsOnDiscountTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/ElectroSila/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/SelectedTelevisorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/SelectedTelevisorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/StylersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/StylersPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/TelevisorsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/electroSila/pageObject/pages/TelevisorsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/tests/TelevisorsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/electroSila/tests/TelevisorsAdditionalValuesTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,14 +71,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Zalivako/JAVA courses/OnlinerCucumber&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Zalivako/JAVA courses/OnlinerCucumber"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Zalivako\JAVA courses\stormnet-automation-testing-finalProject\src\test\resources" />

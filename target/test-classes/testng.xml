@@ -4,13 +4,16 @@
 <suite name ="ElectroSila" parallel="tests" thread-count="1">
     <test name="test">
         <classes>
-            <!--<class name="electroSila.tests.TelevisorsAdditionalValuesTest"></class>-->
-            <!--<class name="electroSila.tests.SearchProductsTest"></class>-->
-            <!--<class name="electroSila.tests.FiltrationProductsTest"></class>-->
-            <!--<class name="electroSila.tests.NavigationCatalogTest"></class>-->
-            <!--<class name="electroSila.tests.DeleteProductTest"></class>-->
-            <!--<class name="electroSila.tests.AddToCartTest"></class>-->
+            <class name="electroSila.tests.InstallmentAndCreditTest"></class>
+            <!--<class name="electroSila.tests.SearchProductsTest"></class>
+            <class name="electroSila.tests.FiltrationProductsTest"></class>
+            <class name="electroSila.tests.NavigationCatalogTest"></class>
+            <class name="electroSila.tests.DeleteProductTest"></class>
+            <class name="electroSila.tests.AddToCartTest"></class>
             <class name="electroSila.tests.ProductsOnDiscountTest"></class>
+            <class name="electroSila.tests.ShowRoadMapTest"></class>
+            <class name="electroSila.tests.CompareTest"></class>
+            <class name="electroSila.tests.SortTest"></class>-->
         </classes>
     </test>
 </suite>

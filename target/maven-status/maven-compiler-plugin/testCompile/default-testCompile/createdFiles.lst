@@ -1,8 +1,10 @@
 framework\elements\Label.class
 framework\TestListener.class
 framework\elements\BaseElement.class
+electroSila\tests\ShowRoadMapTest.class
 framework\elements\Input.class
 framework\Browser$1.class
+electroSila\pageObject\pages\ComparePage.class
 electroSila\pageObject\pages\StylersPage.class
 electroSila\tests\NavigationCatalogTest.class
 framework\PropertyReader.class
@@ -12,8 +14,10 @@ electroSila\tests\SearchProductsTest.class
 framework\elements\BaseElement$1.class
 electroSila\pageObject\pages\SelectedTelevisorPage.class
 framework\Browser.class
+electroSila\pageObject\pages\ShopAddressesPage.class
 electroSila\tests\DeleteProductTest.class
 framework\DriverFactory.class
+electroSila\tests\SortTest.class
 framework\BasePage.class
 electroSila\pageObject\pages\AfterSearchPage.class
 electroSila\tests\AddToCartTest.class
@@ -23,5 +27,6 @@ framework\elements\Button.class
 framework\elements\TextBox.class
 electroSila\pageObject\pages\MainPage.class
 electroSila\pageObject\pages\TelevisorsPage.class
-electroSila\tests\TelevisorsAdditionalValuesTest.class
 electroSila\pageObject\pages\SelectedStylerPage.class
+electroSila\tests\CompareTest.class
+electroSila\tests\InstallmentAndCreditTest.class

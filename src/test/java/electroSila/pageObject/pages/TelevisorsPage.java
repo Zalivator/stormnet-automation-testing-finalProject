@@ -16,11 +16,15 @@ public class TelevisorsPage extends BasePage {
     private static final String BUTTON_FILTERS_VALUE = "//u[text()='%s']";
     private static final String CHECKBOX_FILTER_VALUE = "//strong[text()='%s']/../input";
     private static final Button BUTTON_SHOW_FILTERED_PRODUCTS = new Button(By.id("filter_sbm"));
+    private static final TextBox COOKIE_BLOCK = new TextBox(By.xpath("//div[@class='cookies_wrap show']"));
+    private static final Button COOKIE_CLOSE_BUTTON = new Button(By.xpath("//button[@class='cookies_save']"));
     private static final Label PRODUCTS_EQUALS_FILTERS = new Label(By.xpath("//div[@class='tov_prew']"));
     private static final TextBox NO_FILTERED_PRODUCTS = new TextBox(By.xpath("//span[text()='Ничего не найдено по вашим критериям']/.."));
     private static final Button BUTTON_SHOW_MORE = new Button(By.xpath("//a[@class='navi_dyn']"));
     private static final String TEXT_PRODUCTS_EQUALS_FILTER = "//b[contains(text(), '%s')]/../i";
     private static final TextBox PRODUCTS_NAME_EQUALS_REQUEST = new TextBox(By.xpath("//div[@class='tov_prew']//strong"));
+    private static final String CHECKBOX_PRODUCT_COMPARE = "//img[@title='%s']/../..//input";
+    private static final String NAVIGATION_BUTTON_TO_COMPARED_PRODUCTS = "//img[@title='%s']/../../..//a[@class='show_comp']";
 
     public TelevisorsPage() {
         super(PAGE_LOCATOR, "'Televisors' page");
@@ -68,5 +72,35 @@ public class TelevisorsPage extends BasePage {
             Assert.assertTrue(PRODUCTS_NAME_EQUALS_REQUEST.getText().contains("SAMSUNG"));
         }
         softAssert.assertAll();
+    }
+
+    @Step("Закрытие pop-up с cookie.")
+    public void closeCookies() {
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(COOKIE_BLOCK.isElementPresent(), "Cookie отсутствует на странице.");
+        COOKIE_CLOSE_BUTTON.click();
+        softAssert.assertAll();
+    }
+
+    @Step("Добавление товара для сравнения.")
+    public void addProductToCompare(String productTitle) {
+        Input checkboxProductCompare = new Input(By.xpath(String.format(CHECKBOX_PRODUCT_COMPARE, productTitle)));
+        checkboxProductCompare.scrollIntoView();
+        checkboxProductCompare.clickViaJS();
+    }
+
+    @Step("Проверка выбранных для сравнения товаров.")
+    public void checkProductsToCompare(String productTitle) {
+        Label navigationToComparedProducts = new Label(By.xpath(String.format(NAVIGATION_BUTTON_TO_COMPARED_PRODUCTS, productTitle)));
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(navigationToComparedProducts.isElementPresent(), "Было выбрано менее двух товаров для сравнения.");
+        softAssert.assertAll();
+    }
+
+    @Step("Переход к странице сравнения товаров.")
+    public void navigateToComparePage(String productTitle) {
+        Label navigationToComparedProducts = new Label(By.xpath(String.format(NAVIGATION_BUTTON_TO_COMPARED_PRODUCTS, productTitle)));
+        navigationToComparedProducts.scrollIntoView();
+        navigationToComparedProducts.clickAndWait();
     }
 }

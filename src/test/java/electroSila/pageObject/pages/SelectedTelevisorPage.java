@@ -2,23 +2,22 @@ package electroSila.pageObject.pages;
 
 import framework.BasePage;
 import framework.elements.Button;
+import framework.elements.TextBox;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class SelectedTelevisorPage extends BasePage {
     private static final By PAGE_LOCATOR = By.xpath("//div[@class='name_price']//strong");
-    private static final String BUTTON_ADDITIONAL_RECOMMENDATIONS = "//div[@class='%s']/div[@class='tab_toggle']";
-    private static final String BUTTON_SHOW_RECOMMENDATIONS = "//div[@class='%s']//p[text()='Показать']";
+    private static final Button BUTTON_INSTALLMENT_AND_CREDIT = new Button(By.xpath("//span[@class='btn_kredit_calc']"));
+    private static final TextBox WINDOW_LOCATOR = new TextBox(By.xpath("//div[@class='popup_kredit']"));
 
     public SelectedTelevisorPage() {
         super(PAGE_LOCATOR, "Selected televisor page");
     }
-    @Step("Закрытие вкладок 'Дополнительные услуги' и 'С этим товаром рекомендуют'")
-    public void closeAdditionalServices(String additionalRecommendationClass) {
-        Button buttonAdditionalRecommendations = new Button(By.xpath(String.format(BUTTON_ADDITIONAL_RECOMMENDATIONS, additionalRecommendationClass)));
-        buttonAdditionalRecommendations.clickViaJS();
-        Button buttonShowRecommendations = new Button(By.xpath(String.format(BUTTON_SHOW_RECOMMENDATIONS, additionalRecommendationClass)));
-        Assert.assertEquals(buttonShowRecommendations.getAttribute("style"), "display: none;");
+    @Step("Открытие окна с рассчетом кредита и рассрочки.")
+    public void openInstallmentAndCreditWindow() {
+        BUTTON_INSTALLMENT_AND_CREDIT.click();
+        Assert.assertTrue(WINDOW_LOCATOR.isElementPresent(), "Окно с рассчетом кредита и рассрочки не открылось!");
     }
 }

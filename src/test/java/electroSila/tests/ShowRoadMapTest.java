@@ -14,6 +14,6 @@ public class ShowRoadMapTest extends BaseTest {
         mainPage.goToShopAddresses();
 
         ShopAddressesPage shopAddressesPage = new ShopAddressesPage();
-        shopAddressesPage.goToRoadMap("mag52");
+        shopAddressesPage.goToRoadMap("mag246");
     }
 }
