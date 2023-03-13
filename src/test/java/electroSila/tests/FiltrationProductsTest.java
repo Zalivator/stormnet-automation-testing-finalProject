@@ -18,5 +18,8 @@ public class FiltrationProductsTest extends BaseTest {
         televisorsPage.openFilterList("Технология экрана");
         televisorsPage.choiceFilterValue("QLED");
         televisorsPage.showFilteredProducts();
+        televisorsPage.areProductsEqualsFiltersShowed();
+        televisorsPage.showAllProducts();
+        televisorsPage.areShowedProductsFilteredSuccessfully();
     }
 }

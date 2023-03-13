@@ -21,5 +21,7 @@ public class AddToCartTest extends BaseTest {
 
         SelectedStylerPage selectedStylerPage = new SelectedStylerPage();
         selectedStylerPage.addToCart();
+        selectedStylerPage.isCartWindowShowed();
+        selectedStylerPage.isProductAddedToCartSuccessfully();
     }
 }

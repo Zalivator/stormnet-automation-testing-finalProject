@@ -26,18 +26,23 @@ public class AfterSearchPage extends BasePage {
     public void equalsRequest() {
         Assert.assertTrue(SEARCH_TEXT_AFTER_REQUEST.isDisplayed(), "Страница поиска товаров не была загружена");
     }
-
-    @Step("Проверка товаров на совпадение из строки запроса")
-    public void productsEqualsRequest() {
+    @Step("Проверка отображения товаров для введенного значения в строку поиска.")
+    public void areSearchableProductsShowed() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(PRODUCTS_EQUALS_REQUEST.isElementPresent(), "По запросу ничего не найдено");
+        softAssert.assertAll();
+    }
+    @Step("Отображение всех товаров на одной странице.")
+    public void showAllProducts() {
         while (BUTTON_SHOW_MORE.isElementPresent()) {
             BUTTON_SHOW_MORE.scrollIntoView();
             BUTTON_SHOW_MORE.clickViaJS();
         }
+    }
+    @Step("Проверка товаров на совпадение из строки запроса")
+    public void productsEqualsRequest() {
         for (int i = 0; i < PRODUCTS_NAME_EQUALS_REQUEST.getElements().size(); i++){
             Assert.assertTrue(PRODUCTS_NAME_EQUALS_REQUEST.getText().contains(INPUT_FIND_PRODUCT.getAttribute("value").toUpperCase()));
         }
-        softAssert.assertAll();
     }
 }

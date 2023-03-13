@@ -28,35 +28,48 @@ public class StylersPage extends BasePage {
         Label productLocator = new Label(By.xpath(String.format(PRODUCT_LOCATOR, productName)));
         productLocator.clickAndWait();
     }
-
     @Step("Поиск плоек и стайлеров на скидках.")
     public void showProductsWithDiscountsAndInstallments(String nameButton) {
         Button discountButton = new Button(By.className(nameButton));
         discountButton.clickAndWait();
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(PRODUCTS_EQUALS_FILTERS.isDisplayed(), "Товары на скидках отсутствуют.");
+    }
+    @Step("Отображение всех товаров на одной странице.")
+    public void showAllProducts() {
         while (BUTTON_SHOW_MORE.isElementPresent()) {
             BUTTON_SHOW_MORE.scrollIntoView();
             BUTTON_SHOW_MORE.clickViaJS();
         }
+    }
+    @Step("Проверка товаров на скидках.")
+    public void areDiscountProductsShowed() {
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(PRODUCTS_EQUALS_FILTERS.isDisplayed(), "Товары на скидках отсутствуют.");
+        softAssert.assertAll();
+    }
+    @Step("Проверка корректного отображения товаров только на скидках.")
+    public void areDiscountProductsShowedCorrectly() {
         for (int i = 0; i < PRODUCTS_EQUALS_FILTERS.getElements().size(); i++) {
             Assert.assertTrue(PRODUCTS_EQUALS_FILTERS.isDisplayed());
             Assert.assertTrue(PRODUCTS_SALE_PRICE.isDisplayed(), "Отобразился товар без скидки.");
         }
-        softAssert.assertAll();
     }
-
-    @Step("Сортировка товаров по цене 'Начать с дешевых'.")
-    public void sortProducts(String sortType) {
+    @Step("Проверка отображения товаров выбранной категории.")
+    public void areProductsShowed() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(PRODUCTS_EQUALS_FILTERS.isDisplayed(), "Отсутствуют товары выбранной категории!");
+        softAssert.assertAll();
+    }
+    @Step("Нажатие на кнопку для выбора сортировки.")
+    public void clickOnSort() {
         PRODUCTS_SORT.click();
+    }
+    @Step("Сортировка товаров по цене 'Начать с дешевых'.")
+    public void sortProducts(String sortType) {
         Button typeOfSortProducts = new Button(By.xpath(String.format(TYPE_OF_SORT_PRODUCTS, sortType)));
         typeOfSortProducts.moveAndClickByAction();
-        while (BUTTON_SHOW_MORE.isElementPresent()) {
-            BUTTON_SHOW_MORE.scrollIntoView();
-            BUTTON_SHOW_MORE.clickViaJS();
-        }
+    }
+    @Step("Проверка на корректность отображения товаров при выбранной сортировке.")
+    public void areSortProductsShowedGood() {
         for (int i = 0; i < PRICE_PRODUCT.getElements().size(); i++) {
             if (i + 1 == PRICE_PRODUCT.getElements().size()) {
                 Assert.assertTrue(compareValuesMore(Integer.parseInt(PRICE_PRODUCT.getElements().get(i).getText()), Integer.parseInt(PRICE_PRODUCT.getElements().get(i-1).getText())), "Сортировка по выбранному типу работает некорректно!");
@@ -64,7 +77,6 @@ public class StylersPage extends BasePage {
             }
             Assert.assertTrue(compareValuesLess(Integer.parseInt(PRICE_PRODUCT.getElements().get(i).getText()), Integer.parseInt(PRICE_PRODUCT.getElements().get(i+1).getText())), "Сортировка по выбранному типу работает некорректно!");
         }
-        softAssert.assertAll();
     }
     private boolean compareValuesLess(int a, int b) {
         return a <= b;

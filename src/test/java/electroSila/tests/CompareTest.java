@@ -16,6 +16,7 @@ public class CompareTest extends BaseTest {
         mainPage.navigateHeaderMenu("Телевизоры");
 
         TelevisorsPage televisorsPage = new TelevisorsPage();
+        televisorsPage.isCookieOpened();
         televisorsPage.closeCookies();
         televisorsPage.addProductToCompare("LG 50UQ81006LB телевизор");
         televisorsPage.addProductToCompare("LG 43UQ75006LF телевизор");

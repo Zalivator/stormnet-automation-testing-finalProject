@@ -16,6 +16,10 @@ public class SortTest extends BaseTest {
         mainPage.navigateToSubMenuItem("Стайлеры");
 
         StylersPage stylersPage = new StylersPage();
+        stylersPage.areProductsShowed();
+        stylersPage.clickOnSort();
         stylersPage.sortProducts("Начать с дешевых");
+        stylersPage.showAllProducts();
+        stylersPage.areSortProductsShowedGood();
     }
 }

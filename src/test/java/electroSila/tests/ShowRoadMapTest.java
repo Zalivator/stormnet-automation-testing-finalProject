@@ -15,5 +15,6 @@ public class ShowRoadMapTest extends BaseTest {
 
         ShopAddressesPage shopAddressesPage = new ShopAddressesPage();
         shopAddressesPage.goToRoadMap("mag246");
+        shopAddressesPage.isRoadMapOpened("mag246");
     }
 }

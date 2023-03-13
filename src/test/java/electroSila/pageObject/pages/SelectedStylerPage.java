@@ -19,8 +19,14 @@ public class SelectedStylerPage extends BasePage {
     @Step("Добавление товара в корзину")
     public void addToCart() {
         BUTTON_ADD_TO_CART.click();
-        TextBox pageLocator = new TextBox(PAGE_LOCATOR);
+    }
+    @Step("Проверка открытия окна сразу после успешного добавления товара в корзину.")
+    public void isCartWindowShowed() {
         Assert.assertTrue(CART_LOCATOR.isDisplayed(), "Товар не был добавлен в корзину. Окно с товарами в корзине не открылось.");
+    }
+    @Step("Проверка корректного добавления выбранного товара в корзину.")
+    public void isProductAddedToCartSuccessfully() {
+        TextBox pageLocator = new TextBox(PAGE_LOCATOR);
         Assert.assertTrue(CART_NAME_PRODUCT.getText().contains(pageLocator.getText()), "В каталог был добавлен товар, отличный от того, что был выбран.");
     }
 }

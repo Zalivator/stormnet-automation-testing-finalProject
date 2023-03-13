@@ -35,60 +35,65 @@ public class TelevisorsPage extends BasePage {
         Label productPrev = new Label(By.xpath(String.format(PRODUCT_PREV, productTitle)));
         productPrev.clickAndWait();
     }
-
     @Step("Выбор производителя телевизора в фильтрах.")
     public void choiceBrand(String brandFilterId) {
         Input brandCheckbox = new Input(By.id(brandFilterId));
         brandCheckbox.moveAndClickByAction();
     }
-
     @Step("Раскрытие выпадающего списка в фильтрах.")
     public void openFilterList(String filtersValue) {
         Button buttonFiltersValue = new Button(By.xpath(String.format(BUTTON_FILTERS_VALUE, filtersValue)));
         buttonFiltersValue.scrollIntoView();
         buttonFiltersValue.clickViaJS();
     }
-
     @Step("Выбор фильтра 'Технология экрана'.")
     public void choiceFilterValue(String filterValue) {
         Input checkboxFilterValue = new Input(By.xpath(String.format(CHECKBOX_FILTER_VALUE, filterValue)));
         checkboxFilterValue.clickViaJS();
     }
-
-    @Step("Демонстрация примененных фильтров.")
+    @Step("Показ отфильтрованных товаров.")
     public void showFilteredProducts() {
         BUTTON_SHOW_FILTERED_PRODUCTS.scrollIntoView();
         BUTTON_SHOW_FILTERED_PRODUCTS.clickViaJS();
+    }
+    @Step("Проверка на совпадение товаров для выбранных фильтров.")
+    public void areProductsEqualsFiltersShowed() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertFalse(NO_FILTERED_PRODUCTS.isElementPresent(), "По выбранным фильтрам ничего не найдено");
+        softAssert.assertAll();
+    }
+    @Step("Отображение всех товаров на одной странице.")
+    public void showAllProducts() {
         while (BUTTON_SHOW_MORE.isElementPresent()) {
             BUTTON_SHOW_MORE.scrollIntoView();
             BUTTON_SHOW_MORE.clickViaJS();
         }
+    }
+    @Step("Проверка характеристик отображаемых товаров согласно выбранных фильтров.")
+    public void areShowedProductsFilteredSuccessfully() {
         TextBox screenTechnology = new TextBox(By.xpath(String.format(TEXT_PRODUCTS_EQUALS_FILTER, "Технология экрана")));
         for (int i = 0; i < PRODUCTS_EQUALS_FILTERS.getElements().size(); i++){
             Assert.assertTrue(PRODUCTS_EQUALS_FILTERS.isDisplayed());
             Assert.assertEquals(screenTechnology.getText(), "QLED");
             Assert.assertTrue(PRODUCTS_NAME_EQUALS_REQUEST.getText().contains("SAMSUNG"));
         }
-        softAssert.assertAll();
     }
-
-    @Step("Закрытие pop-up с cookie.")
-    public void closeCookies() {
+    @Step("Проверка на наличие всплывающего окна с cookie.")
+    public void isCookieOpened() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(COOKIE_BLOCK.isElementPresent(), "Cookie отсутствует на странице.");
-        COOKIE_CLOSE_BUTTON.click();
         softAssert.assertAll();
     }
-
+    @Step("Закрытие pop-up с cookie.")
+    public void closeCookies() {
+        COOKIE_CLOSE_BUTTON.click();
+    }
     @Step("Добавление товара для сравнения.")
     public void addProductToCompare(String productTitle) {
         Input checkboxProductCompare = new Input(By.xpath(String.format(CHECKBOX_PRODUCT_COMPARE, productTitle)));
         checkboxProductCompare.scrollIntoView();
         checkboxProductCompare.clickViaJS();
     }
-
     @Step("Проверка выбранных для сравнения товаров.")
     public void checkProductsToCompare(String productTitle) {
         Label navigationToComparedProducts = new Label(By.xpath(String.format(NAVIGATION_BUTTON_TO_COMPARED_PRODUCTS, productTitle)));
@@ -96,7 +101,6 @@ public class TelevisorsPage extends BasePage {
         softAssert.assertTrue(navigationToComparedProducts.isElementPresent(), "Было выбрано менее двух товаров для сравнения.");
         softAssert.assertAll();
     }
-
     @Step("Переход к странице сравнения товаров.")
     public void navigateToComparePage(String productTitle) {
         Label navigationToComparedProducts = new Label(By.xpath(String.format(NAVIGATION_BUTTON_TO_COMPARED_PRODUCTS, productTitle)));

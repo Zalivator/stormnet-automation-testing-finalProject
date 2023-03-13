@@ -18,5 +18,8 @@ public class ProductsOnDiscountTest extends BaseTest {
 
         StylersPage stylersPage = new StylersPage();
         stylersPage.showProductsWithDiscountsAndInstallments("btn6");
+        stylersPage.showAllProducts();
+        stylersPage.areDiscountProductsShowed();
+        stylersPage.areDiscountProductsShowedCorrectly();
     }
 }

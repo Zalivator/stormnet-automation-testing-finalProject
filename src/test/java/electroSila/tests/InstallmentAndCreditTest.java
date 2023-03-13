@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class InstallmentAndCreditTest extends BaseTest {
     @Description("Открытие окна 'Справочный расчет при оплате частями' для выбранного продукта. Ожидаемый результат: окно 'Справочный расчет при оплате частями' открывается.")
     @Test
-    public void electrosilaTest() {
+    public void installmentsAndCreditsTest() {
         MainPage mainPage = new MainPage();
         mainPage.navigateHeaderMenu("Телевизоры");
 
@@ -19,6 +19,7 @@ public class InstallmentAndCreditTest extends BaseTest {
 
         SelectedTelevisorPage selectedTelevisorPage = new SelectedTelevisorPage();
         selectedTelevisorPage.openInstallmentAndCreditWindow();
+        selectedTelevisorPage.isCreditWindowOpened();
     }
 
 }

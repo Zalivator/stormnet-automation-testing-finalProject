@@ -20,6 +20,9 @@ public class ShopAddressesPage extends BasePage {
         Button showShopAddress = new Button(By.xpath(String.format(SHOW_SHOP_ADDRESS, shopAddressId)));
         showShopAddress.scrollIntoView();
         showShopAddress.clickViaJS();
+    }
+    @Step ("Проверка открытия карты для выбранного магазина.")
+    public void isRoadMapOpened(String shopAddressId) {
         TextBox enableMap = new TextBox(By.xpath(String.format(ENABLE_MAP, shopAddressId)));
         Assert.assertTrue(enableMap.isDisplayed(), "Карта для выбранного магазина не была открыта!");
     }

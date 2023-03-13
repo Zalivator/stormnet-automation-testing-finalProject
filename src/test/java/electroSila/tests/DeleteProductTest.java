@@ -25,5 +25,6 @@ public class DeleteProductTest extends BaseTest {
 
         CartWindow cartWindow = new CartWindow();
         cartWindow.editCountProduct("minus");
+        cartWindow.isProductDeleted();
     }
 }

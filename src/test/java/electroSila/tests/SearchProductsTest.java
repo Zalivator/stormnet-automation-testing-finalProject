@@ -16,6 +16,8 @@ public class SearchProductsTest extends BaseTest {
 
         AfterSearchPage afterSearchPage = new AfterSearchPage();
         afterSearchPage.equalsRequest();
+        afterSearchPage.areSearchableProductsShowed();
+        afterSearchPage.showAllProducts();
         afterSearchPage.productsEqualsRequest();
     }
 }

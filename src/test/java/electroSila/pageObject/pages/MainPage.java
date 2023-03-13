@@ -24,34 +24,28 @@ public class MainPage extends BasePage {
         Label headerMenuItem = new Label(By.xpath(String.format(HEADER_MENU_ITEM, menuItem)));
         headerMenuItem.clickAndWait();
     }
-
     @Step("Ввод нименования в поисковую строку на главной странице")
     public void searchProduct(String productForFind) {
         INPUT_FIND_PRODUCT.sendKeys(productForFind);
     }
-
     @Step("Переход к странице с найденными товарами")
     public void navigateToFoundProducts() {
         BUTTON_FOR_FIND_PRODUCTS.clickAndWait();
     }
-
     @Step("Открытие навигационного меню 'Каталог'")
     public void openCatalog() {
         BUTTON_CATALOG.click();
     }
-
     @Step("Переход к подменю 'Красота и здоровье'")
     public void navigateToItem(String itemName) {
         Label catalogItem = new Label(By.xpath(String.format(CATALOG_ITEM, itemName)));
         catalogItem.moveToElement();
     }
-
     @Step("Переход на страницу 'Стайлеры'")
     public void navigateToSubMenuItem(String menuItemName) {
         Label subMenuItemName = new Label(By.xpath(String.format(CATALOG_ITEM, menuItemName)));
         subMenuItemName.clickViaJS();
     }
-
     @Step("Переход на страницу 'Адреса магазинов'.")
     public void goToShopAddresses() {
         SHOP_ADDRESSES.clickAndWait();

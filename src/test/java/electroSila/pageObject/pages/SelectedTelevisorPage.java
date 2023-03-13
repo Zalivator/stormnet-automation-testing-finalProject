@@ -15,9 +15,13 @@ public class SelectedTelevisorPage extends BasePage {
     public SelectedTelevisorPage() {
         super(PAGE_LOCATOR, "Selected televisor page");
     }
+
     @Step("Открытие окна с рассчетом кредита и рассрочки.")
     public void openInstallmentAndCreditWindow() {
         BUTTON_INSTALLMENT_AND_CREDIT.click();
+    }
+    @Step("Проверка открытия окна с рассчетом кредита и рассрочки.")
+    public void isCreditWindowOpened() {
         Assert.assertTrue(WINDOW_LOCATOR.isElementPresent(), "Окно с рассчетом кредита и рассрочки не открылось!");
     }
 }
